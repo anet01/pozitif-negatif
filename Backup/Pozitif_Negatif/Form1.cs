@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Pozitif_Negatif
 {
-    public partial class form1 : Form
+    public partial class Form1 : Form
     {
-        public form1()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -60,7 +60,7 @@ toplam++;
                     osayi = osayi + 1;
                     label6.Text = "0 Olanların Sayısı : " + osayi.ToString() ;
                 }
-              
+            
             }
                 
        }
@@ -94,24 +94,6 @@ toplam++;
             this.sayilarTableAdapter.Fill(this.pozitif_NegatifDataSet.Sayilar);
             sayilarBindingSource.AddNew();
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            sayilarBindingSource.AddNew();
-            ptoplam = 0;
-            ntoplam = 0;
-            nsayac = 0;
-            psayac=0;
-            osayi = 0;
-            toplam = 0;
-            
-            label2.Text = "Pozitiflerin Toplamı :";
-            label3.Text = "Negatiflerin Toplamı :";
-            label4.Text="Pozitiflerin Sayısı :";
-            label5.Text = "Negatiflerin Sayısı :";
-            label6.Text = "0 Olanların Sayısı :";
-                
         }
   
     }

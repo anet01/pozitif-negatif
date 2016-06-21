@@ -18,3 +18,13 @@ G:\Masa Üstü\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\ResolveAssemblyReferenc
 G:\Masa Üstü\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.Form1.resources
 G:\Masa Üstü\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.Properties.Resources.resources
 G:\Masa Üstü\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.csproj.GenerateResource.Cache
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\bin\Debug\Pozitif_Negatif.exe.config
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.exe
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.pdb
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\bin\Debug\Pozitif_Negatif.mdb
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\bin\Debug\Pozitif_Negatif.exe
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\bin\Debug\Pozitif_Negatif.pdb
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.csprojResolveAssemblyReference.cache
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.Properties.Resources.resources
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.csproj.GenerateResource.Cache
+F:\Projelerim\Yeni klasör (2)\Pozitif_Negatif\Pozitif_Negatif\obj\Debug\Pozitif_Negatif.form1.resources

@@ -1,6 +1,6 @@
 ﻿namespace Pozitif_Negatif
 {
-    partial class form1
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pozitif_NegatifDataSet = new Pozitif_Negatif.Pozitif_NegatifDataSet();
+            this.sayilarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sayilarTableAdapter = new Pozitif_Negatif.Pozitif_NegatifDataSetTableAdapters.SayilarTableAdapter();
+            this.tableAdapterManager = new Pozitif_Negatif.Pozitif_NegatifDataSetTableAdapters.TableAdapterManager();
             this.sayilarDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,14 +51,9 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sayilarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pozitif_NegatifDataSet = new Pozitif_Negatif.Pozitif_NegatifDataSet();
-            this.sayilarTableAdapter = new Pozitif_Negatif.Pozitif_NegatifDataSetTableAdapters.SayilarTableAdapter();
-            this.tableAdapterManager = new Pozitif_Negatif.Pozitif_NegatifDataSetTableAdapters.TableAdapterManager();
-            this.yeni = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.sayilarDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sayilarBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pozitif_NegatifDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sayilarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sayilarDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -139,6 +138,26 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // pozitif_NegatifDataSet
+            // 
+            this.pozitif_NegatifDataSet.DataSetName = "Pozitif_NegatifDataSet";
+            this.pozitif_NegatifDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sayilarBindingSource
+            // 
+            this.sayilarBindingSource.DataMember = "Sayilar";
+            this.sayilarBindingSource.DataSource = this.pozitif_NegatifDataSet;
+            // 
+            // sayilarTableAdapter
+            // 
+            this.sayilarTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.SayilarTableAdapter = this.sayilarTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Pozitif_Negatif.Pozitif_NegatifDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // sayilarDataGridView
             // 
             this.sayilarDataGridView.AutoGenerateColumns = false;
@@ -206,43 +225,12 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "NEGATIFLERIN_SAYISI";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
-            // sayilarBindingSource
-            // 
-            this.sayilarBindingSource.DataMember = "Sayilar";
-            this.sayilarBindingSource.DataSource = this.pozitif_NegatifDataSet;
-            // 
-            // pozitif_NegatifDataSet
-            // 
-            this.pozitif_NegatifDataSet.DataSetName = "Pozitif_NegatifDataSet";
-            this.pozitif_NegatifDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sayilarTableAdapter
-            // 
-            this.sayilarTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.SayilarTableAdapter = this.sayilarTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Pozitif_Negatif.Pozitif_NegatifDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // yeni
-            // 
-            this.yeni.Location = new System.Drawing.Point(249, 39);
-            this.yeni.Name = "yeni";
-            this.yeni.Size = new System.Drawing.Size(75, 23);
-            this.yeni.TabIndex = 11;
-            this.yeni.Text = "Yeni Kayıt";
-            this.yeni.UseVisualStyleBackColor = true;
-            this.yeni.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // form1
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(337, 172);
-            this.Controls.Add(this.yeni);
             this.Controls.Add(this.sayilarDataGridView);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label6);
@@ -253,12 +241,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "form1";
+            this.Name = "Form1";
             this.Text = "100 Adet Sayı";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.sayilarDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sayilarBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pozitif_NegatifDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sayilarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sayilarDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,7 +276,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.Button yeni;
     }
 }
 
